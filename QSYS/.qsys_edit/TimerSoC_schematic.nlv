@@ -1,0 +1,31 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst TimerSoC.ROM -pg 1 -lvl 3 -y 310
+preplace inst TimerSoC.NIOS2 -pg 1 -lvl 2 -y 430
+preplace inst TimerSoC.SysID -pg 1 -lvl 3 -y 790
+preplace inst TimerSoC.TimerCore -pg 1 -lvl 3 -y 490
+preplace inst TimerSoC.JTAG -pg 1 -lvl 3 -y 390
+preplace inst TimerSoC.NIOS2.cpu -pg 1
+preplace inst TimerSoC.GpioOut -pg 1 -lvl 3 -y 870
+preplace inst TimerSoC -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst TimerSoC.Buttons -pg 1 -lvl 3 -y 130
+preplace inst TimerSoC.RAM -pg 1 -lvl 3 -y 230
+preplace inst TimerSoC.NIOS2.reset_bridge -pg 1
+preplace inst TimerSoC.SegmentsDisplays -pg 1 -lvl 3 -y 690
+preplace inst TimerSoC.NIOS2.clock_bridge -pg 1
+preplace inst TimerSoC.GpioIn -pg 1 -lvl 3 -y 30
+preplace inst TimerSoC.Switches -pg 1 -lvl 3 -y 590
+preplace inst TimerSoC.Clock -pg 1 -lvl 1 -y 450
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)GpioIn.external_connection,(SLAVE)TimerSoC.gpio_in) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)GpioOut.external_connection,(SLAVE)TimerSoC.gpio_out) 1 0 3 NJ 900 NJ 900 NJ
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)TimerSoC.reset,(SLAVE)Clock.clk_in_reset) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>TimerSoC</net_container>(SLAVE)RAM.reset1,(MASTER)NIOS2.debug_reset_request,(SLAVE)TimerCore.reset,(SLAVE)SysID.reset,(SLAVE)ROM.reset1,(SLAVE)JTAG.reset,(SLAVE)NIOS2.reset,(SLAVE)SegmentsDisplays.reset,(SLAVE)GpioOut.reset,(SLAVE)Buttons.reset,(SLAVE)GpioIn.reset,(MASTER)Clock.clk_reset,(SLAVE)Switches.reset) 1 1 2 290 390 690
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)SegmentsDisplays.external_connection,(SLAVE)TimerSoC.displays) 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)TimerSoC.clk,(SLAVE)Clock.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)Switches.external_connection,(SLAVE)TimerSoC.switches) 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc INTERCONNECT<net_container>TimerSoC</net_container>(SLAVE)JTAG.avalon_jtag_slave,(SLAVE)GpioOut.s1,(SLAVE)TimerCore.s1,(MASTER)NIOS2.data_master,(SLAVE)Switches.s1,(SLAVE)RAM.s1,(SLAVE)GpioIn.s1,(SLAVE)SysID.control_slave,(MASTER)NIOS2.instruction_master,(SLAVE)ROM.s1,(SLAVE)SegmentsDisplays.s1,(SLAVE)NIOS2.debug_mem_slave,(SLAVE)Buttons.s1) 1 1 2 310 370 710
+preplace netloc EXPORT<net_container>TimerSoC</net_container>(SLAVE)TimerSoC.buttons,(SLAVE)Buttons.external_connection) 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc FAN_OUT<net_container>TimerSoC</net_container>(SLAVE)JTAG.irq,(SLAVE)TimerCore.irq,(MASTER)NIOS2.irq) 1 2 1 730
+preplace netloc FAN_OUT<net_container>TimerSoC</net_container>(SLAVE)TimerCore.clk,(SLAVE)NIOS2.clk,(SLAVE)GpioOut.clk,(SLAVE)Buttons.clk,(SLAVE)JTAG.clk,(SLAVE)Switches.clk,(SLAVE)RAM.clk1,(SLAVE)GpioIn.clk,(SLAVE)SegmentsDisplays.clk,(SLAVE)SysID.clk,(SLAVE)ROM.clk1,(MASTER)Clock.clk) 1 1 2 270 350 670
+levelinfo -pg 1 0 60 920
+levelinfo -hier TimerSoC 70 100 430 760 910

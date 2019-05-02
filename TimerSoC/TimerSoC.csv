@@ -1,0 +1,89 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# File: /home/estape/Documents/SistemasEmbebidos/ProyectoII/TimerSoC/TimerSoC.csv
+# Generated on: Thu May  2 02:22:12 2019
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+switches_export[1],Input,PIN_AC12,3A,B3A_N0,PIN_AC12,2.5 V,,,,,,,,,,,,,
+switches_export[0],Input,PIN_AB12,3A,B3A_N0,PIN_AB12,2.5 V,,,,,,,,,,,,,
+reset_reset_n,Input,PIN_Y16,3B,B3B_N0,PIN_Y16,2.5 V,,,,,,,,,,,,,
+leds_export[9],Output,PIN_Y21,5A,B5A_N0,PIN_AH14,,,,,,,,,,,,,,
+leds_export[8],Output,PIN_W21,5A,B5A_N0,PIN_AH13,,,,,,,,,,,,,,
+leds_export[7],Output,PIN_W20,5A,B5A_N0,PIN_AF15,,,,,,,,,,,,,,
+leds_export[6],Output,PIN_Y19,4A,B4A_N0,PIN_AH15,,,,,,,,,,,,,,
+leds_export[5],Output,PIN_W19,4A,B4A_N0,PIN_AJ9,,,,,,,,,,,,,,
+leds_export[4],Output,PIN_W17,4A,B4A_N0,PIN_AJ10,,,,,,,,,,,,,,
+leds_export[3],Output,PIN_V18,4A,B4A_N0,PIN_AG15,,,,,,,,,,,,,,
+leds_export[2],Output,PIN_V17,4A,B4A_N0,PIN_AJ11,,,,,,,,,,,,,,
+leds_export[1],Output,PIN_W16,4A,B4A_N0,PIN_AK7,,,,,,,,,,,,,,
+leds_export[0],Output,PIN_V16,4A,B4A_N0,PIN_AC14,,,,,,,,,,,,,,
+gpio_out_export[7],Output,PIN_AJ16,4A,B4A_N0,PIN_AJ16,2.5 V,,,,,,,,,,,,,
+gpio_out_export[6],Output,PIN_AJ17,4A,B4A_N0,PIN_AJ17,2.5 V,,,,,,,,,,,,,
+gpio_out_export[5],Output,PIN_AJ19,4A,B4A_N0,PIN_AJ19,2.5 V,,,,,,,,,,,,,
+gpio_out_export[4],Output,PIN_AK19,4A,B4A_N0,PIN_AK19,2.5 V,,,,,,,,,,,,,
+gpio_out_export[3],Output,PIN_AK18,4A,B4A_N0,PIN_AK18,2.5 V,,,,,,,,,,,,,
+gpio_out_export[2],Output,PIN_AK16,4A,B4A_N0,PIN_AK16,2.5 V,,,,,,,,,,,,,
+gpio_out_export[1],Output,PIN_Y18,4A,B4A_N0,PIN_Y18,2.5 V,,,,,,,,,,,,,
+gpio_out_export[0],Output,PIN_Y17,4A,B4A_N0,PIN_Y17,2.5 V,,,,,,,,,,,,,
+gpio_in_export[7],Input,,,,PIN_AK11,,,,,,,,,,,,,,
+gpio_in_export[6],Input,,,,PIN_AK14,,,,,,,,,,,,,,
+gpio_in_export[5],Input,,,,PIN_W15,,,,,,,,,,,,,,
+gpio_in_export[4],Input,,,,PIN_AG16,,,,,,,,,,,,,,
+gpio_in_export[3],Input,,,,PIN_AH8,,,,,,,,,,,,,,
+gpio_in_export[2],Input,,,,PIN_AK12,,,,,,,,,,,,,,
+gpio_in_export[1],Input,,,,PIN_AH7,,,,,,,,,,,,,,
+gpio_in_export[0],Input,,,,PIN_AH12,,,,,,,,,,,,,,
+displays_export[31],Output,,,,PIN_AJ12,,,,,,,,,,,,,,
+displays_export[30],Output,PIN_AB22,5A,B5A_N0,PIN_AB22,2.5 V,,,,,,,,,,,,,
+displays_export[29],Output,PIN_AB25,5A,B5A_N0,PIN_AB25,2.5 V,,,,,,,,,,,,,
+displays_export[28],Output,PIN_AB28,5B,B5B_N0,PIN_AB28,2.5 V,,,,,,,,,,,,,
+displays_export[27],Output,PIN_AC25,5A,B5A_N0,PIN_AC25,2.5 V,,,,,,,,,,,,,
+displays_export[26],Output,PIN_AD25,5A,B5A_N0,PIN_AD25,2.5 V,,,,,,,,,,,,,
+displays_export[25],Output,PIN_AC27,5A,B5A_N0,PIN_AC27,2.5 V,,,,,,,,,,,,,
+displays_export[24],Output,PIN_AD26,5A,B5A_N0,PIN_AD26,2.5 V,,,,,,,,,,,,,
+displays_export[23],Output,,,,PIN_AK13,,,,,,,,,,,,,,
+displays_export[22],Output,PIN_AC30,5B,B5B_N0,PIN_AC30,2.5 V,,,,,,,,,,,,,
+displays_export[21],Output,PIN_AC29,5B,B5B_N0,PIN_AC29,2.5 V,,,,,,,,,,,,,
+displays_export[20],Output,PIN_AD30,5B,B5B_N0,PIN_AD30,2.5 V,,,,,,,,,,,,,
+displays_export[19],Output,PIN_AC28,5B,B5B_N0,PIN_AC28,2.5 V,,,,,,,,,,,,,
+displays_export[18],Output,PIN_AD29,5B,B5B_N0,PIN_AD29,2.5 V,,,,,,,,,,,,,
+displays_export[17],Output,PIN_AE29,5B,B5B_N0,PIN_AE29,2.5 V,,,,,,,,,,,,,
+displays_export[16],Output,PIN_AB23,5A,B5A_N0,PIN_AB23,2.5 V,,,,,,,,,,,,,
+displays_export[15],Output,,,,PIN_AJ14,,,,,,,,,,,,,,
+displays_export[14],Output,PIN_AD27,5A,B5A_N0,PIN_AD27,2.5 V,,,,,,,,,,,,,
+displays_export[13],Output,PIN_AF30,5A,B5A_N0,PIN_AF30,2.5 V,,,,,,,,,,,,,
+displays_export[12],Output,PIN_AF29,5A,B5A_N0,PIN_AF29,2.5 V,,,,,,,,,,,,,
+displays_export[11],Output,PIN_AG30,5A,B5A_N0,PIN_AG30,2.5 V,,,,,,,,,,,,,
+displays_export[10],Output,PIN_AH30,5A,B5A_N0,PIN_AH30,2.5 V,,,,,,,,,,,,,
+displays_export[9],Output,PIN_AH29,5A,B5A_N0,PIN_AH29,2.5 V,,,,,,,,,,,,,
+displays_export[8],Output,PIN_AJ29,5A,B5A_N0,PIN_AJ29,2.5 V,,,,,,,,,,,,,
+displays_export[7],Output,,,,PIN_AH10,,,,,,,,,,,,,,
+displays_export[6],Output,PIN_AH28,5A,B5A_N0,PIN_AH28,2.5 V,,,,,,,,,,,,,
+displays_export[5],Output,PIN_AG28,5A,B5A_N0,PIN_AG28,2.5 V,,,,,,,,,,,,,
+displays_export[4],Output,PIN_AF28,5A,B5A_N0,PIN_AF28,2.5 V,,,,,,,,,,,,,
+displays_export[3],Output,PIN_AG27,5A,B5A_N0,PIN_AG27,2.5 V,,,,,,,,,,,,,
+displays_export[2],Output,PIN_AE28,5A,B5A_N0,PIN_AE28,2.5 V,,,,,,,,,,,,,
+displays_export[1],Output,PIN_AE27,5A,B5A_N0,PIN_AE27,2.5 V,,,,,,,,,,,,,
+displays_export[0],Output,PIN_AE26,5A,B5A_N0,PIN_AE26,2.5 V,,,,,,,,,,,,,
+clk_clk,Input,PIN_AF14,3B,B3B_N0,PIN_AF14,2.5 V,,,,,,,,,,,,,
+buttons_export[1],Input,PIN_AA15,3B,B3B_N0,PIN_AA15,2.5 V,,,,,,,,,,,,,
+buttons_export[0],Input,PIN_AA14,3B,B3B_N0,PIN_AA14,2.5 V,,,,,,,,,,,,,
+altera_reserved_tms,Input,,,,PIN_V9,,,,,,,,,,,,,,
+altera_reserved_tdo,Output,,,,PIN_AB9,,,,,,,,,,,,,,
+altera_reserved_tdi,Input,,,,PIN_U8,,,,,,,,,,,,,,
+altera_reserved_tck,Input,,,,PIN_AC5,,,,,,,,,,,,,,
