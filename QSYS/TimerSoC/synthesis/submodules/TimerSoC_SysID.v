@@ -49,7 +49,7 @@ module TimerSoC_SysID (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1556784122 : 0;
+  assign readdata = address ? 1556920374 : 0;
 
 endmodule
 

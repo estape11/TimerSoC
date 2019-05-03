@@ -4,8 +4,10 @@
 		.displays_export (<connected-to-displays_export>), // displays.export
 		.gpio_in_export  (<connected-to-gpio_in_export>),  //  gpio_in.export
 		.gpio_out_export (<connected-to-gpio_out_export>), // gpio_out.export
+		.leds_export     (<connected-to-leds_export>),     //     leds.export
 		.reset_reset_n   (<connected-to-reset_reset_n>),   //    reset.reset_n
 		.switches_export (<connected-to-switches_export>), // switches.export
-		.leds_export     (<connected-to-leds_export>)      //     leds.export
+		.uart_rxd        (<connected-to-uart_rxd>),        //     uart.rxd
+		.uart_txd        (<connected-to-uart_txd>)         //         .txd
 	);
 
